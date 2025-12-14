@@ -1,22 +1,29 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { CustomerLayout } from "./components/Layout/CustomerLayout/CustomerLayout";
-import { ExecutorLayout } from "./components/Layout/ExecutorLayout/ExecutorLayout";
-import { ExecutorPage } from "./pages/ExecutorPage/ExecutorPage";
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { CustomerLayout } from './components/Layout/CustomerLayout/CustomerLayout'
+import { ExecutorLayout } from './components/Layout/ExecutorLayout/ExecutorLayout'
+import { ExecutorPage } from './pages/ExecutorPage/ExecutorPage'
+import { ExecutorAppLayout } from './components/Layout/ExecutorAppLayout/ExecutorAppLayout'
+import { OrdersPage } from './pages/ExecutorPage/OrdersPage/OrdersPage'
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/customer" element={<CustomerLayout />}>
+        <Route path="/" element={<CustomerLayout />}>
           <Route index element={<div>Main costumer</div>} />
         </Route>
-        <Route path="/executor" element={<ExecutorLayout />}>
+
+        <Route path="/for-executor" element={<ExecutorLayout />}>
           <Route index element={<ExecutorPage />} />
-          <Route path="main" element={<div>main</div>} />
+        </Route>
+
+        <Route path="/executor" element={<ExecutorAppLayout />}>
+          <Route index element={<OrdersPage />} />
+          <Route path="prices" element={<div>prices</div>} />
         </Route>
       </Routes>
     </BrowserRouter>
-  );
+  )
 }
 
-export default App;
+export default App

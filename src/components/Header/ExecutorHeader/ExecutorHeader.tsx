@@ -8,7 +8,7 @@ export const ExecutorHeader = () => {
       <nav>
         <div className="items-cener flex justify-center gap-[48px]">
           <CustomLink text="Сайт для спецалистов" link="/customer" />
-          <CustomLink text="Вход для клиентов" link="/customer" />
+          <CustomLink text="Вход для клиентов" link="/executor" />
         </div>
       </nav>
     </header>

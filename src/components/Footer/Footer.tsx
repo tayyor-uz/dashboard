@@ -71,7 +71,7 @@ export const Footer = () => {
           <Button
             text="Чат с поддержкой"
             type="button"
-            onClick={() => {}}
+            onClick={() => { }}
             className="block bg-[#AEAEAE]"
           />
           <div className="mt-[12px] flex items-center gap-[16px]">

@@ -1,10 +1,12 @@
 import { useState } from 'react'
+import { ordersData } from '../ordersData'
+import { OrderCard } from '../OrderCard/OrderCard'
 
 export const AllOrders = () => {
   const [inputValue, setInputValue] = useState('')
 
   return (
-    <div>
+    <div className='flex flex-col gap-8'>
       <div className="flex gap-[40px]">
         <div className="flex w-[40%] flex-col gap-[8px]">
           <h2 className="font-monts text-[30px] leading-[1.3] font-semibold">
@@ -24,7 +26,27 @@ export const AllOrders = () => {
           />
         </div>
       </div>
-      <div></div>
+      <div>
+        <ul className='grid grid-cols-2 gap-5'>
+          {ordersData.map((item) => {
+            return (
+              <li key={item.id}>
+                <OrderCard
+                  id={item.id}
+                  title={item.serviceName}
+                  description={item.description}
+                  price={item.price}
+                  location={item.district}
+                  date={item.publishedDate}
+                  firstName={item.firstName}
+                  lastName={item.lastName}
+                  number={item.phone}
+                />
+              </li>
+            )
+          })}
+        </ul>
+      </div>
     </div>
   )
 }

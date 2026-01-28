@@ -7,10 +7,5 @@ export const CustomerLayout = ({
 }: {
   children?: React.ReactNode;
 }): JSX.Element => {
-  return (
-    <>
-      <header>Header</header>
-      <main>{children || <Outlet />}</main>;<footer>Foter</footer>
-    </>
-  );
+  return <>{children || <Outlet />}</>;
 };

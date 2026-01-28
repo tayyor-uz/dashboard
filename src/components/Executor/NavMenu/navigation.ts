@@ -11,3 +11,9 @@ export const executorNavigation = [
   { id: 4, name: 'Уведомления', link: 'notifications', icon: NotificationIcon },
   { id: 5, name: 'Поддержка', link: 'support', icon: SupportIcon },
 ]
+
+export const customerNavigation = [
+  { id: 1, name: 'Поиск специалиста', link: '/customer', icon: OrderIcon },
+  { id: 2, name: 'Профиль', link: 'profile', icon: PricesIcon },
+  { id: 3, name: 'Уведомления', link: 'notifications', icon: NotificationIcon },
+]

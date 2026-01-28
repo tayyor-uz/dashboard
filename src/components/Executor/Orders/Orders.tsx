@@ -5,6 +5,8 @@ import DataIcon from '@/assets/svg/settings.svg?react'
 import HistoryIcon from '@/assets/svg/building.svg?react'
 import { AllOrders } from './AllOrders/AllOrders'
 import { OrdersFilter } from './AllOrders/OrdersFilter/OrdersFilter'
+import { ActiveOrders } from './ActiveOrders/ActiveOrders'
+import { OrdersHistory } from './OrdersHistory/OrdersHistory'
 
 interface IOrderProps {
   activeTab: string
@@ -62,8 +64,8 @@ export const Orders = ({ activeTab, onChange }: IOrderProps) => {
             <Content value={ORDERS.all}>
               <AllOrders />
             </Content>
-            <Content value={ORDERS.in_process}>2</Content>
-            <Content value={ORDERS.history}>3</Content>
+            <Content value={ORDERS.in_process}><ActiveOrders /></Content>
+            <Content value={ORDERS.history}><OrdersHistory /></Content>
           </div>
         </Root>
       </div>

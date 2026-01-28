@@ -1,4 +1,5 @@
 import Logo from '@/assets/svg/logo.svg?react'
+import { executorNavigation } from '@/components/Executor/NavMenu/navigation'
 import { NavMenu } from '@/components/Executor/NavMenu/NavMenu'
 import { Link } from 'react-router-dom'
 
@@ -8,7 +9,7 @@ export const ExecutorAppHeader = () => {
       <Link to="/executor">
         <Logo />
       </Link>
-      <NavMenu />
+      <NavMenu menu={executorNavigation} />
       <div />
     </header>
   )

@@ -1,7 +1,5 @@
-import { Main } from '@/components/Executor/Main/Main'
 import { Footer } from '@/components/Footer/Footer'
 import { CustomerAppHeader } from '@/components/Header/CustomerAppHeader/CustomerAppHeader'
-import { CustomerHeader } from '@/components/Header/CustomerHeader/CustomerHeader'
 
 export const CustomerPage = () => {
   return (

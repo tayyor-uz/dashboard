@@ -5,7 +5,7 @@ import { ExecutorPage } from './pages/ExecutorPage/ExecutorPage'
 import { ExecutorAppLayout } from './components/Layout/ExecutorAppLayout/ExecutorAppLayout'
 import { OrdersPage } from './pages/ExecutorPage/OrdersPage/OrdersPage'
 import { CustomerAppLayout } from './components/Layout/CustomerAppLayout/CustomerAppLayout'
-import { CustomerPage } from './pages/CustomerPages/CustomerPage'
+// import { CustomerPage } from './pages/CustomerPages/CustomerPage'
 import { CustomerLanding } from './pages/CustomerLanding/CustomerLanding'
 
 function App() {

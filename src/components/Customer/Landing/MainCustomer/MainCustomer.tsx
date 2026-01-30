@@ -9,7 +9,7 @@ export const MainLandingCustomer = () => {
   return (
     <>
       <CustomerHeader />
-      <main className="px-[80px]">
+      <main className="site-container">
         <Hero />
         <Services />
         <HowItsWork />

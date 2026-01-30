@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next'
 import WalletIco from '@/assets/svg/card-wallet.svg?react'
 import LocationIcon from '@/assets/svg/card-buildings.svg?react'
 import CalendarIcon from '@/assets/svg/card-calendar.svg?react'
+import { useModalToggle } from '@/utils/useModalToggle/useModalToggle'
 
 interface IOrderCardProps {
   id: number
@@ -28,6 +29,8 @@ export const OrderCard = ({
   lastName,
 }: IOrderCardProps) => {
   const { t } = useTranslation()
+
+  const [isOpen, toggle] = useModalToggle()
 
   return (
     <div className="flex w-full flex-col items-center rounded-2xl border-[1px] border-black/10 p-7.5 shadow-sm">
@@ -59,7 +62,8 @@ export const OrderCard = ({
       <Button
         text={t('show_number')}
         type="button"
-        onClick={() => alert(`${id} ${firstName} ${lastName} ${number}`)}
+        // onClick={() => alert(`${id} ${firstName} ${lastName} ${number}`)}
+        onClick={() => toggle}
         className="ronded-lg bg-primary mt-8 flex !p-[7px_31px] text-2xl font-medium text-white"
       />
     </div>

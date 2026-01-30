@@ -19,7 +19,7 @@ export const ExecutorAppLayout = ({
         <meta name="robots" content="noindex, nofollow" />
       </Helmet>
       <ExecutorAppHeader />
-      <main className="px-[52px]">{children || <Outlet />}</main>
+      <main className="site-container">{children || <Outlet />}</main>
     </>
   )
 }

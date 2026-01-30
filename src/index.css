@@ -1,4 +1,5 @@
 @import 'tailwindcss';
+@import './tailwind.css';
 
 @theme {
   --color-primary: #258a8d;
@@ -59,5 +60,11 @@ button {
   }
   a:hover {
     color: #747bff;
+  }
+} */
+
+/* @layer components {
+  .container {
+    @apply mx-auto w-full max-w-[1440px];
   }
 } */

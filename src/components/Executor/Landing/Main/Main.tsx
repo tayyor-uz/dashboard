@@ -5,7 +5,7 @@ import { Feedbacks } from './Feedbacks/Feedbacks'
 
 export const Main = () => {
   return (
-    <>
+    <main className="site-container">
       <section id="hero" className="mt-[30px]">
         <Hero />
       </section>
@@ -18,6 +18,6 @@ export const Main = () => {
       <section>
         <Feedbacks />
       </section>
-    </>
+    </main>
   )
 }

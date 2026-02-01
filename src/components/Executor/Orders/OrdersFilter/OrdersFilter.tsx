@@ -26,7 +26,7 @@ export const OrdersFilter = () => {
 
   return (
     <div className="w-full rounded-2xl border-[1px] border-gray-300 p-10">
-      <p className="">Фильтры</p>
+      <p className="font-montserrat text-xl font-medium">{t('filters')}</p>
       <form onSubmit={handleSubmit} className="mt-11 flex flex-col gap-5">
         <Select
           label={t('districts')}
@@ -99,12 +99,12 @@ export const OrdersFilter = () => {
         />
         <Button
           type="submit"
-          text="Применить"
+          text={t('apply')}
           className="bg-primary text-white"
         />
         <Button
           type="button"
-          text="Сбросить"
+          text={t('reset')}
           onClick={() => resetForm()}
           className="bg-[#FFE5DD]"
         />

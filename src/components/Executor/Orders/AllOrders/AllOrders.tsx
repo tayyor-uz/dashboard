@@ -2,11 +2,15 @@ import { useState } from 'react'
 import { ordersData } from '../ordersData'
 import { OrderCard } from '../OrderCard/OrderCard'
 
-export const AllOrders = () => {
+export const AllOrders = ({
+  onClick,
+}: {
+  onClick: (number: string) => void
+}) => {
   const [inputValue, setInputValue] = useState('')
 
   return (
-    <div className='flex flex-col gap-8'>
+    <div className="flex flex-col gap-8">
       <div className="flex gap-[40px]">
         <div className="flex w-[40%] flex-col gap-[8px]">
           <h2 className="font-monts text-[30px] leading-[1.3] font-semibold">
@@ -27,11 +31,12 @@ export const AllOrders = () => {
         </div>
       </div>
       <div>
-        <ul className='grid grid-cols-2 gap-5'>
+        <ul className="grid grid-cols-2 gap-5">
           {ordersData.map((item) => {
             return (
               <li key={item.id}>
                 <OrderCard
+                  onClick={onClick}
                   id={item.id}
                   title={item.serviceName}
                   description={item.description}

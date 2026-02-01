@@ -7,6 +7,7 @@ import { OrdersPage } from './pages/ExecutorPage/OrdersPage/OrdersPage'
 import { CustomerAppLayout } from './components/Layout/CustomerAppLayout/CustomerAppLayout'
 // import { CustomerPage } from './pages/CustomerPages/CustomerPage'
 import { CustomerLanding } from './pages/CustomerLanding/CustomerLanding'
+import { NotificationsPage } from './pages/ExecutorPage/NotificationsPage/NotificationsPage'
 
 function App() {
   return (
@@ -27,7 +28,7 @@ function App() {
           <Route index element={<OrdersPage />} />
           <Route path="prices" element={<div>prices</div>} />
           <Route path="profile" element={<div>profile</div>} />
-          <Route path="notifications" element={<div>notifications</div>} />
+          <Route path="notifications" element={<NotificationsPage />} />
           <Route path="support" element={<div>support</div>} />
         </Route>
 

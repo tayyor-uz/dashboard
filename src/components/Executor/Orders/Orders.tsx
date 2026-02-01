@@ -83,7 +83,7 @@ export const Orders = ({ activeTab, onChange }: IOrderProps) => {
                 </div>
               </CustomTrigger>
             </List>
-            <div>
+            <div className="w-full">
               <Content value={ORDERS.all}>
                 <AllOrders onClick={handleSetNumber} />
               </Content>
@@ -104,10 +104,10 @@ export const Orders = ({ activeTab, onChange }: IOrderProps) => {
               <PhoneIcon width={24} height={24} />
               <span className="text-3xl font-semibold">Контакты</span>
             </div>
-            <p className="font-montserrat text-center text-3xl font-medium">
+            <p className="font-monts text-center text-3xl font-medium">
               {selectedNumber}
             </p>
-            <span className="font-montserrat text-xl font-medium text-[#8D2525]">
+            <span className="font-monts text-xl font-medium text-[#8D2525]">
               Осталось 2 из 5 откликов
             </span>
             <Link

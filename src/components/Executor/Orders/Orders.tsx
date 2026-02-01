@@ -88,7 +88,7 @@ export const Orders = ({ activeTab, onChange }: IOrderProps) => {
                 <AllOrders onClick={handleSetNumber} />
               </Content>
               <Content value={ORDERS.in_process}>
-                <ActiveOrders />
+                <ActiveOrders onClick={handleSetNumber} />
               </Content>
               <Content value={ORDERS.history}>
                 <OrdersHistory />

@@ -6,7 +6,7 @@ export const Heading = ({
   description?: string
 }) => {
   return (
-    <div className="flec-col flex gap-2">
+    <div className="flex flex-col gap-2">
       <h1 className={`font-monts !text-3xl leading-[1.3] font-medium`}>
         {title}
       </h1>

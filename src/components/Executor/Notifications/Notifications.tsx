@@ -18,10 +18,7 @@ export const Notifications = () => {
         </>
       ) : (
         <div className="mx-auto flex min-h-[60vh] w-full max-w-[567px] flex-col items-center justify-center gap-5">
-          <Heading
-            title={t('have_no_any_notifications')}
-            className="leading-[1.8]"
-          />
+          <Heading title={t('have_no_any_notifications')} />
           <p className="text-center text-lg leading-[1.5] font-medium text-black/60">
             {t('no_notifications_description')}
           </p>

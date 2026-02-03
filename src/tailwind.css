@@ -5,9 +5,22 @@
     @apply mx-auto w-full max-w-[1536px] px-2.5 md:px-5 xl:px-10;
   }
 
-  /* .custom-scroll {
-    @apply scrollbar-thin scrollbar-thumb-slate-300 scrollbar-track-transparent;
-  } */
+  .tw-pagination :where(.ant-pagination-item) {
+    @apply rounded-lg border border-gray-300 text-gray-700;
+  }
+
+  .tw-pagination :where(.ant-pagination-item-active) {
+    @apply !border-primary !bg-primary !text-white;
+  }
+
+  .tw-pagination :where(.ant-pagination-item:hover) {
+    @apply !bg-primary border-blue-400 !text-white;
+  }
+
+  .tw-pagination :where(.ant-pagination-prev),
+  .tw-pagination :where(.ant-pagination-next) {
+    @apply rounded-lg border border-gray-300;
+  }
 }
 
 @layer base {

@@ -8,6 +8,7 @@ import { CustomerAppLayout } from './components/Layout/CustomerAppLayout/Custome
 // import { CustomerPage } from './pages/CustomerPages/CustomerPage'
 import { CustomerLanding } from './pages/CustomerLanding/CustomerLanding'
 import { NotificationsPage } from './pages/ExecutorPage/NotificationsPage/NotificationsPage'
+import { ProfilePage } from './pages/ExecutorPage/ProfilePage/ProfilePage'
 
 function App() {
   return (
@@ -27,7 +28,7 @@ function App() {
         <Route path="/executor" element={<ExecutorAppLayout />}>
           <Route index element={<OrdersPage />} />
           <Route path="prices" element={<div>prices</div>} />
-          <Route path="profile" element={<div>profile</div>} />
+          <Route path="profile" element={<ProfilePage />} />
           <Route path="notifications" element={<NotificationsPage />} />
           <Route path="support" element={<div>support</div>} />
         </Route>

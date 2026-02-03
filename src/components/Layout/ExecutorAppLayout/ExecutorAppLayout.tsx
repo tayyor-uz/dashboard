@@ -1,3 +1,4 @@
+import { ExecutorAppFooter } from '@/components/Footer/ExecutorAppFooter/ExecutorAppFooter'
 import { ExecutorAppHeader } from '@/components/Header/ExecutorAppHeader/ExecutorAppHeader'
 import type { JSX } from 'react'
 import { Helmet } from 'react-helmet-async'
@@ -20,6 +21,7 @@ export const ExecutorAppLayout = ({
       </Helmet>
       <ExecutorAppHeader />
       <main className="site-container">{children || <Outlet />}</main>
+      <ExecutorAppFooter />
     </>
   )
 }

@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { ordersData } from '../ordersData'
 import { OrderCard } from '../OrderCard/OrderCard'
+// import { Pagination } from 'antd'
 
 export const AllOrders = ({
   onClick,
@@ -8,6 +9,7 @@ export const AllOrders = ({
   onClick: (number: string) => void
 }) => {
   const [inputValue, setInputValue] = useState('')
+  // const [currentsPage, setCurrentPage] = useState(1)
 
   return (
     <div className="flex flex-col gap-8">
@@ -30,6 +32,26 @@ export const AllOrders = ({
           />
         </div>
       </div>
+      {/* <Pagination
+        total={100}
+        showSizeChanger={false}
+        className="tw-pagination"
+        current={currentsPage}
+        onChange={(value) => setCurrentPage(value)}
+      /> */}
+      {/* <Pagination
+        total={100}
+        showSizeChanger={false}
+        current={currentsPage}
+        onChange={(value) => setCurrentPage(value)}
+        itemRender={(page, type, original) => {
+          if (type === 'page') {
+            return <button className="">{page}</button>
+          }
+          return original
+        }}
+      /> */}
+
       <div>
         <ul className="grid grid-cols-2 gap-5">
           {ordersData.map((item) => {

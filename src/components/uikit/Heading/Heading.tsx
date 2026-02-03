@@ -1,11 +1,18 @@
 export const Heading = ({
   title,
-  className,
+  description,
 }: {
   title: string
-  className?: string
+  description?: string
 }) => {
   return (
-    <h1 className={`font-monts !text-3xl font-medium ${className}`}>{title}</h1>
+    <div className="flec-col flex gap-2">
+      <h1 className={`font-monts !text-3xl leading-[1.3] font-medium`}>
+        {title}
+      </h1>
+      {description && (
+        <p className="font-regular text-sm leading-[1.2]">{description}</p>
+      )}
+    </div>
   )
 }

@@ -38,6 +38,7 @@ body {
   min-height: 100vh;
   font-family: var(--font-sans);
   box-sizing: border-box;
+  background-color: #f5f6f7;
 }
 
 h1 {
@@ -52,19 +53,3 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
-
-/* @media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-} */
-
-/* @layer components {
-  .container {
-    @apply mx-auto w-full max-w-[1440px];
-  }
-} */

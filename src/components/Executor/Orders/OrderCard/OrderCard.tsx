@@ -37,7 +37,7 @@ export const OrderCard = ({
   }
 
   return (
-    <div className="flex w-full flex-col items-center rounded-2xl border-[1px] border-black/10 p-7.5 shadow-sm">
+    <div className="flex w-full flex-col items-center rounded-2xl border-[1px] border-black/10 bg-white p-7.5 shadow-sm">
       <h3 className="w-full text-2xl font-medium">{title}</h3>
       <p className="font-regular font-montserrat mt-4 text-xs">{description}</p>
       <div className="mt-7 flex w-full flex-col gap-2.5">

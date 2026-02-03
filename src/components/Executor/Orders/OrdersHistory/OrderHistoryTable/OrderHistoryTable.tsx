@@ -15,7 +15,7 @@ export const OrderHistoryTable = () => {
             <th className="px-6">Статут</th>
           </tr>
         </thead>
-        <tbody className="w-full">
+        <tbody className="w-full bg-white">
           {ordersHistoryData.map((item) => {
             return (
               <tr className="font-montserrat h-20 border-b border-black/30 font-semibold text-black/70 last:border-b-0">

@@ -25,7 +25,7 @@ export const OrdersFilter = () => {
   })
 
   return (
-    <div className="w-full rounded-2xl border-[1px] border-gray-300 p-10">
+    <div className="w-full rounded-2xl border-[1px] border-gray-300 bg-white p-10">
       <p className="font-montserrat text-xl font-medium">{t('filters')}</p>
       <form onSubmit={handleSubmit} className="mt-11 flex flex-col gap-5">
         <Select

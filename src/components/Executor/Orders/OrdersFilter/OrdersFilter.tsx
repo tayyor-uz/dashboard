@@ -1,5 +1,5 @@
 import { Button } from '@/components/uikit/Button/Button'
-import { Select } from '@/components/uikit/Select/Select'
+import { CustomSelect } from '@/components/uikit/CustomSelect/CustomSelect'
 import { districtsData } from './districtsData'
 import { useFormik } from 'formik'
 import { DatePicker } from 'antd'
@@ -16,6 +16,9 @@ export const OrdersFilter = () => {
   const { values, setFieldValue, handleSubmit, resetForm } = useFormik({
     initialValues: {
       district: { id: 0, name: '' },
+      district1: { id: 0, name: '' },
+      district2: { id: 0, name: '' },
+      district3: { id: 0, name: '' },
       startDate: '',
       endDate: '',
     },
@@ -28,7 +31,7 @@ export const OrdersFilter = () => {
     <div className="w-full rounded-2xl border-[1px] border-gray-300 bg-white p-10">
       <p className="font-montserrat text-xl font-medium">{t('filters')}</p>
       <form onSubmit={handleSubmit} className="mt-11 flex flex-col gap-5">
-        <Select
+        <CustomSelect
           label={t('districts')}
           placeholder={t('select_district')}
           value={values.district}
@@ -74,28 +77,28 @@ export const OrdersFilter = () => {
           step={1}
         />
         <span className="h-[1px] w-full bg-gray-300" />
-        <Select
-          label={t('districts')}
+        <CustomSelect
+          label={t('district')}
           placeholder={t('select_district')}
-          value={values.district}
+          value={values.district1}
           options={districtsData}
-          onChange={(value) => setFieldValue('district', value)}
+          onChange={(value) => setFieldValue('district1', value)}
         />
         <span className="h-[1px] w-full bg-gray-300" />
-        <Select
-          label={t('districts')}
+        <CustomSelect
+          label={t('district')}
           placeholder={t('select_district')}
-          value={values.district}
+          value={values.district2}
           options={districtsData}
-          onChange={(value) => setFieldValue('district', value)}
+          onChange={(value) => setFieldValue('district2', value)}
         />
         <span className="h-[1px] w-full bg-gray-300" />
-        <Select
-          label={t('districts')}
+        <CustomSelect
+          label={t('district')}
           placeholder={t('select_district')}
-          value={values.district}
+          value={values.district3}
           options={districtsData}
-          onChange={(value) => setFieldValue('district', value)}
+          onChange={(value) => setFieldValue('district3', value)}
         />
         <Button
           type="submit"

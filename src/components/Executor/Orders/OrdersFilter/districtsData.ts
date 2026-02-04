@@ -1,4 +1,4 @@
-import type { ISelectOption } from '@/components/uikit/Select/Select'
+import type { ISelectOption } from '@/components/uikit/CustomSelect/CustomSelect'
 
 export const districtsData: ISelectOption[] = [
   { id: 1, name: 'Алмазарский', fullName: 'Алмазарский район' },

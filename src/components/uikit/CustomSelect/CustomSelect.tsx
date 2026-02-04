@@ -16,7 +16,7 @@ interface ISelectProps {
   label?: string
 }
 
-export const Select = ({
+export const CustomSelect = ({
   label,
   options,
   value = null,

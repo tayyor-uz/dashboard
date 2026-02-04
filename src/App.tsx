@@ -1,14 +1,13 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { CustomerLayout } from './components/Layout/CustomerLayout/CustomerLayout'
 import { ExecutorLayout } from './components/Layout/ExecutorLayout/ExecutorLayout'
-import { ExecutorPage } from './pages/ExecutorPage/ExecutorPage'
 import { ExecutorAppLayout } from './components/Layout/ExecutorAppLayout/ExecutorAppLayout'
 import { OrdersPage } from './pages/ExecutorPage/OrdersPage/OrdersPage'
 import { CustomerAppLayout } from './components/Layout/CustomerAppLayout/CustomerAppLayout'
-// import { CustomerPage } from './pages/CustomerPages/CustomerPage'
 import { CustomerLanding } from './pages/CustomerLanding/CustomerLanding'
 import { NotificationsPage } from './pages/ExecutorPage/NotificationsPage/NotificationsPage'
 import { ProfilePage } from './pages/ExecutorPage/ProfilePage/ProfilePage'
+import { ExecutorLanding } from './pages/ExecutorLanding/ExecutorLanding'
 
 function App() {
   return (
@@ -21,7 +20,7 @@ function App() {
 
         {/* Executor landing */}
         <Route path="/for-executor" element={<ExecutorLayout />}>
-          <Route index element={<ExecutorPage />} />
+          <Route index element={<ExecutorLanding />} />
         </Route>
 
         {/* Executor App */}

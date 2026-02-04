@@ -7,6 +7,7 @@ interface IInputBarProps {
   palceholder: string
   label?: string
   className?: string
+  hasIcon?: boolean
   onChange: (value: string) => void
 }
 
@@ -16,6 +17,7 @@ export const InputBar = ({
   palceholder,
   label,
   className,
+  hasIcon = false,
   onChange,
 }: IInputBarProps) => {
   if (label) {
@@ -36,11 +38,13 @@ export const InputBar = ({
   } else {
     return (
       <div className="relative w-full">
-        <SearchIcon
-          width={25}
-          height={25}
-          className="absolute top-1/2 left-6 -translate-y-1/2"
-        />
+        {hasIcon && (
+          <SearchIcon
+            width={25}
+            height={25}
+            className="absolute top-1/2 left-6 -translate-y-1/2"
+          />
+        )}
         <input
           name={name}
           value={value}

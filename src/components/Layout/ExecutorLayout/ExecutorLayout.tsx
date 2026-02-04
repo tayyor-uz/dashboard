@@ -1,11 +1,11 @@
-import type { JSX } from "react";
-import type React from "react";
-import { Outlet } from "react-router-dom";
+import type { JSX } from 'react'
+import type React from 'react'
+import { Outlet } from 'react-router-dom'
 
 export const ExecutorLayout = ({
   children,
 }: {
-  children?: React.ReactNode;
+  children?: React.ReactNode
 }): JSX.Element => {
-  return <>{children || <Outlet />}</>;
-};
+  return <>{children || <Outlet />}</>
+}
